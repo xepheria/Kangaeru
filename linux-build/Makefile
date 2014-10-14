@@ -291,29 +291,29 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
-Classes/HelloWorldScene.o: Classes/HelloWorldScene.cpp.o
-.PHONY : Classes/HelloWorldScene.o
+Classes/MainMenu.o: Classes/MainMenu.cpp.o
+.PHONY : Classes/MainMenu.o
 
 # target to build an object file
-Classes/HelloWorldScene.cpp.o:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
-.PHONY : Classes/HelloWorldScene.cpp.o
+Classes/MainMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o
+.PHONY : Classes/MainMenu.cpp.o
 
-Classes/HelloWorldScene.i: Classes/HelloWorldScene.cpp.i
-.PHONY : Classes/HelloWorldScene.i
+Classes/MainMenu.i: Classes/MainMenu.cpp.i
+.PHONY : Classes/MainMenu.i
 
 # target to preprocess a source file
-Classes/HelloWorldScene.cpp.i:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.i
-.PHONY : Classes/HelloWorldScene.cpp.i
+Classes/MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.i
+.PHONY : Classes/MainMenu.cpp.i
 
-Classes/HelloWorldScene.s: Classes/HelloWorldScene.cpp.s
-.PHONY : Classes/HelloWorldScene.s
+Classes/MainMenu.s: Classes/MainMenu.cpp.s
+.PHONY : Classes/MainMenu.s
 
 # target to generate assembly for a file
-Classes/HelloWorldScene.cpp.s:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.s
-.PHONY : Classes/HelloWorldScene.cpp.s
+Classes/MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.s
+.PHONY : Classes/MainMenu.cpp.s
 
 proj.linux/main.o: proj.linux/main.cpp.o
 .PHONY : proj.linux/main.o
@@ -363,9 +363,9 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
-	@echo "... Classes/HelloWorldScene.o"
-	@echo "... Classes/HelloWorldScene.i"
-	@echo "... Classes/HelloWorldScene.s"
+	@echo "... Classes/MainMenu.o"
+	@echo "... Classes/MainMenu.i"
+	@echo "... Classes/MainMenu.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"

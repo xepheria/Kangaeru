@@ -2394,35 +2394,13 @@ CCGL.h
 base/CCPlatformMacros.h
 ../cocos2d/cocos/renderer/base/CCPlatformMacros.h
 
-/home/alex/Kangaeru/Kangaeru/Classes/AppDelegate.cpp
-AppDelegate.h
-/home/alex/Kangaeru/Kangaeru/Classes/AppDelegate.h
-HelloWorldScene.h
-/home/alex/Kangaeru/Kangaeru/Classes/HelloWorldScene.h
+/home/alex/Kangaeru/Kangaeru/Classes/MainMenu.cpp
+MainMenu.h
+/home/alex/Kangaeru/Kangaeru/Classes/MainMenu.h
 
-/home/alex/Kangaeru/Kangaeru/Classes/AppDelegate.h
+/home/alex/Kangaeru/Kangaeru/Classes/MainMenu.h
 cocos2d.h
 /home/alex/Kangaeru/Kangaeru/Classes/cocos2d.h
-
-/home/alex/Kangaeru/Kangaeru/Classes/HelloWorldScene.cpp
-HelloWorldScene.h
-/home/alex/Kangaeru/Kangaeru/Classes/HelloWorldScene.h
-
-/home/alex/Kangaeru/Kangaeru/Classes/HelloWorldScene.h
-cocos2d.h
-/home/alex/Kangaeru/Kangaeru/Classes/cocos2d.h
-
-/home/alex/Kangaeru/Kangaeru/proj.linux/main.cpp
-../Classes/AppDelegate.h
-/home/alex/Kangaeru/Kangaeru/Classes/AppDelegate.h
-stdlib.h
--
-stdio.h
--
-unistd.h
--
-string
--
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h

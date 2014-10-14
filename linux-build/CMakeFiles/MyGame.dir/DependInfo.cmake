@@ -5,7 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/alex/Kangaeru/Kangaeru/Classes/AppDelegate.cpp" "/home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o"
-  "/home/alex/Kangaeru/Kangaeru/Classes/HelloWorldScene.cpp" "/home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o"
+  "/home/alex/Kangaeru/Kangaeru/Classes/MainMenu.cpp" "/home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o"
   "/home/alex/Kangaeru/Kangaeru/proj.linux/main.cpp" "/home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
