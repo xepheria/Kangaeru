@@ -118,11 +118,35 @@ CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o.provides: CMakeFiles/MyGame.dir/Cla
 
 CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o
 
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o: ../Classes/KanjiBase.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o -c /home/alex/Kangaeru/Kangaeru/Classes/KanjiBase.cpp
+
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/Kangaeru/Kangaeru/Classes/KanjiBase.cpp > CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/Kangaeru/Kangaeru/Classes/KanjiBase.cpp -o CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o
+
 # Object files for target MyGame
 MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o"
+"CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o"
 
 # External object files for target MyGame
 MyGame_EXTERNAL_OBJECTS =
@@ -130,6 +154,7 @@ MyGame_EXTERNAL_OBJECTS =
 bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
 bin/MyGame: lib/libspine.a
 bin/MyGame: lib/libcocostudio.a
@@ -152,6 +177,7 @@ CMakeFiles/MyGame.dir/build: bin/MyGame
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.requires
 .PHONY : CMakeFiles/MyGame.dir/requires
 
 CMakeFiles/MyGame.dir/clean:

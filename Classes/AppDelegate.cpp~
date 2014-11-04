@@ -20,6 +20,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
+    Size designSize = Size(768, 1024);
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionExactFit);
+
     // turn on display FPS
     director->setDisplayStats(true);
 

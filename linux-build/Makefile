@@ -291,6 +291,30 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
+Classes/KanjiBase.o: Classes/KanjiBase.cpp.o
+.PHONY : Classes/KanjiBase.o
+
+# target to build an object file
+Classes/KanjiBase.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o
+.PHONY : Classes/KanjiBase.cpp.o
+
+Classes/KanjiBase.i: Classes/KanjiBase.cpp.i
+.PHONY : Classes/KanjiBase.i
+
+# target to preprocess a source file
+Classes/KanjiBase.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.i
+.PHONY : Classes/KanjiBase.cpp.i
+
+Classes/KanjiBase.s: Classes/KanjiBase.cpp.s
+.PHONY : Classes/KanjiBase.s
+
+# target to generate assembly for a file
+Classes/KanjiBase.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.s
+.PHONY : Classes/KanjiBase.cpp.s
+
 Classes/MainMenu.o: Classes/MainMenu.cpp.o
 .PHONY : Classes/MainMenu.o
 
@@ -363,6 +387,9 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/KanjiBase.o"
+	@echo "... Classes/KanjiBase.i"
+	@echo "... Classes/KanjiBase.s"
 	@echo "... Classes/MainMenu.o"
 	@echo "... Classes/MainMenu.i"
 	@echo "... Classes/MainMenu.s"

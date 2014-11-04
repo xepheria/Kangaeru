@@ -68,7 +68,7 @@ CMakeFiles/MyGame.dir/all: cocos2d/cocos/editor-support/cocosbuilder/CMakeFiles/
 CMakeFiles/MyGame.dir/all: cocos2d/cocos/editor-support/cocostudio/CMakeFiles/cocostudio.dir/all
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/depend
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles  1
 	@echo "Built target MyGame"
 .PHONY : CMakeFiles/MyGame.dir/all
 
@@ -334,7 +334,7 @@ cocos2d/cocos/audio/preinstall:
 cocos2d/cocos/audio/CMakeFiles/audio.dir/all:
 	$(MAKE) -f cocos2d/cocos/audio/CMakeFiles/audio.dir/build.make cocos2d/cocos/audio/CMakeFiles/audio.dir/depend
 	$(MAKE) -f cocos2d/cocos/audio/CMakeFiles/audio.dir/build.make cocos2d/cocos/audio/CMakeFiles/audio.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles 
 	@echo "Built target audio"
 .PHONY : cocos2d/cocos/audio/CMakeFiles/audio.dir/all
 
@@ -344,7 +344,7 @@ all: cocos2d/cocos/audio/CMakeFiles/audio.dir/all
 
 # Build rule for subdir invocation for target.
 cocos2d/cocos/audio/CMakeFiles/audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 cocos2d/cocos/audio/CMakeFiles/audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles 0
 .PHONY : cocos2d/cocos/audio/CMakeFiles/audio.dir/rule

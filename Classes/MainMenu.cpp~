@@ -58,7 +58,7 @@ bool MainMenu::init()
     // create and initialize a label
     
     CCString *labelString = CCString::createWithFormat("漢ガエル");
-    auto label = LabelTTF::create(labelString->getCString(), "Arial", 40);
+    auto label = LabelTTF::create(labelString->getCString(), "falcon.ttf", 40);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -83,6 +83,7 @@ bool MainMenu::init()
 
 //Game 1
 void MainMenu::menuGame1Callback(cocos2d::Ref *pSender){
+   transitionToKanjiBaseScene();
     //tbd
 }
 
@@ -95,4 +96,16 @@ void MainMenu::menuGame2Callback(cocos2d::Ref *pSender){
 void MainMenu::menuCloseCallback(cocos2d::Ref *pSender){
     Director::getInstance()->end();
     exit(0);
+}
+
+void MainMenu::toGameScene()
+{
+    //get the game scene and run it.
+    auto scene = KanjiBase::createScene();
+    Director::getInstance()->replaceScene(scene);
+}
+
+//transition to kanji base
+void MainMenu::transitionToKanjiBaseScene(){
+   toGameScene();
 }

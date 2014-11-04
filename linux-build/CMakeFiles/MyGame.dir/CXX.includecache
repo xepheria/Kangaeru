@@ -2394,6 +2394,10 @@ CCGL.h
 base/CCPlatformMacros.h
 ../cocos2d/cocos/renderer/base/CCPlatformMacros.h
 
+/home/alex/Kangaeru/Kangaeru/Classes/KanjiBase.h
+cocos2d.h
+/home/alex/Kangaeru/Kangaeru/Classes/cocos2d.h
+
 /home/alex/Kangaeru/Kangaeru/Classes/MainMenu.cpp
 MainMenu.h
 /home/alex/Kangaeru/Kangaeru/Classes/MainMenu.h
@@ -2401,6 +2405,8 @@ MainMenu.h
 /home/alex/Kangaeru/Kangaeru/Classes/MainMenu.h
 cocos2d.h
 /home/alex/Kangaeru/Kangaeru/Classes/cocos2d.h
+KanjiBase.h
+/home/alex/Kangaeru/Kangaeru/Classes/KanjiBase.h
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h

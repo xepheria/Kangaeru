@@ -2,6 +2,7 @@
 #define __MAINMENU_H__
 
 #include "cocos2d.h"
+#include "KanjiBase.h"
 
 class MainMenu : public cocos2d::Layer
 {
@@ -16,6 +17,10 @@ public:
     void menuCloseCallback(cocos2d::Ref *pSender);
     void menuGame1Callback(cocos2d::Ref *pSender);
     void menuGame2Callback(cocos2d::Ref *pSender);
+    
+    //change scenes
+    void transitionToKanjiBaseScene();
+    void toGameScene();
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainMenu);

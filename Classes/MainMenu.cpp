@@ -83,6 +83,7 @@ bool MainMenu::init()
 
 //Game 1
 void MainMenu::menuGame1Callback(cocos2d::Ref *pSender){
+   transitionToKanjiBaseScene();
     //tbd
 }
 
@@ -95,4 +96,17 @@ void MainMenu::menuGame2Callback(cocos2d::Ref *pSender){
 void MainMenu::menuCloseCallback(cocos2d::Ref *pSender){
     Director::getInstance()->end();
     exit(0);
+}
+
+void MainMenu::toGameScene()
+{
+    //get the game scene and run it.
+    auto scene = KanjiBase::createScene();
+    Director::getInstance()->pushScene(scene);
+    //what is diff between replaceScene and pushScene?
+}
+
+//transition to kanji base
+void MainMenu::transitionToKanjiBaseScene(){
+   toGameScene();
 }
