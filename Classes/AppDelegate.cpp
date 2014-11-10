@@ -11,6 +11,20 @@ AppDelegate::~AppDelegate()
 {
 }
 
+void setupResolutionPolicy(float designW, float designH)
+{
+     auto glview = Director::getInstance()->getOpenGLView();
+     Size screenSize = glview->getFrameSize();
+
+     float designRatio = designW / designH;
+     float screenRatio = screenSize.height / screenSize.width;
+
+     ResolutionPolicy resolutionPolicy = screenRatio < designRatio ?
+               ResolutionPolicy::FIXED_HEIGHT : ResolutionPolicy::FIXED_WIDTH;
+
+    glview->setDesignResolutionSize(designW, designH, resolutionPolicy);
+}
+
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     auto director = Director::getInstance();
@@ -19,6 +33,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLView::create("Kangaeru");
         director->setOpenGLView(glview);
     }
+    
+    setupResolutionPolicy(1024, 768);
 
     // turn on display FPS
     director->setDisplayStats(true);

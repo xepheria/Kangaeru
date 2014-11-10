@@ -33,9 +33,9 @@ bool KanjiBase::init(){
       return false;
    }
    
-   auto size = Director::getInstance()->getWinSize();
+   auto size = Director::getInstance()->getVisibleSize();
    auto background = Sprite::create("background.png"); //here the background.png is a "red screen" png.
-   background->setScale(size.width/background->getContentSize().width);
+   background->setScale(size.height/background->getContentSize().height);
    background->setPosition(size.width/2, size.height/2);
    this->addChild(background);     // add a background sprite to watch more obviously
    
@@ -73,15 +73,16 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
    //open dictionary plist file
    std::string path = FileUtils::getInstance()->fullPathForFilename("dictionaries/N5.plist");
    N5Dict = FileUtils::getInstance()->getValueMapFromFile(path);
-   cout << N5Dict.size() << endl;
+   //cout << N5Dict.size() << endl;
    numOfCells = N5Dict.size();
    
    //create a tableview
    Size winSize = Director::getInstance()->getWinSize();
    TableView *pTable = TableView::create(this, winSize);
    pTable->setDirection(ScrollView::Direction::VERTICAL);
-   pTable->setPosition(Vec2(winSize.width/2,0));
+   pTable->setPosition(Vec2(winSize.width/2-50,0));
    pTable->setDelegate(this);
+   pTable->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
    this->addChild(pTable);
    pTable->reloadData();
 
@@ -91,7 +92,7 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
       const char *str1 = str.c_str();
       ValueMap kanjiEntry = N5Dict.at(str1).asValueMap();
       auto kanjiName = kanjiEntry.at("Kanji").asString();
-      cout << kanjiName << endl;
+      //cout << kanjiName << endl;
    }
    
    //tbd
@@ -102,21 +103,22 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
 void KanjiBase::tableCellTouched(TableView* table, TableViewCell* cell)
 {
     CCLOG("cell touched at index: %ld", cell->getIdx());
+    
 }
 
 Size KanjiBase::tableCellSizeForIndex(TableView *table, ssize_t idx)
 {
 
-    return Size(60, 60);
+    return Size(100, 60);
 }
 
 TableViewCell* KanjiBase::tableCellAtIndex(TableView *table, ssize_t idx)
 {
    //creates the numbers for the string, with idx being the index
-   cout << std::to_string(idx) << endl;
+   //cout << std::to_string(idx) << endl;
    auto kanjiEntry = N5Dict.at(std::to_string(idx)).asValueMap();
    std::string kanjiString = kanjiEntry.at("Kanji").asString();
-   cout << kanjiString << endl;
+   //cout << kanjiString << endl;
    TableViewCell *cell = table->dequeueCell();
    //creates default icon with index if table doesn't contain cell
    if (!cell) {
@@ -125,13 +127,13 @@ TableViewCell* KanjiBase::tableCellAtIndex(TableView *table, ssize_t idx)
       //create default icon sprite
       auto sprite = Sprite::create("Icon.png");
       sprite->setAnchorPoint(Vec2::ZERO);
-      sprite->setPosition(Vec2(0, 0));
+      sprite->setPosition(cell->getContentSize().width/2, cell->getContentSize().height/2);
       cell->addChild(sprite);
       
       //generates the numbered label for each icon
-      auto label = Label::createWithSystemFont(kanjiString, "falcon.ttf", 20.0);
-      label->setPosition(Vec2::ZERO);
-      label->setAnchorPoint(Vec2::ZERO);
+      auto label = Label::createWithSystemFont(kanjiString, "falcon.ttf", 30.0);
+      label->setPosition(Vec2(sprite->getContentSize().width/2, sprite->getContentSize().height/2));
+      label->setAnchorPoint(Vec2(0.5, 0.5));
       label->setTag(123);
       cell->addChild(label);
    }

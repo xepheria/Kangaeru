@@ -6,7 +6,9 @@
 /home/alex/Kangaeru/Kangaeru/proj.android/bin/res/drawable-ldpi/icon.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/bin/res/drawable-hdpi/icon.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/bin/res/drawable-mdpi/icon.png \
+/home/alex/Kangaeru/Kangaeru/proj.android/assets/background.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/Game1Normal.png \
+/home/alex/Kangaeru/Kangaeru/proj.android/assets/black_screen.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/MainMenubackground.jpg \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/CloseSelected.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/fonts \
@@ -15,5 +17,8 @@
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/Game2Normal.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/Game2Selected.png \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/Game1Selected.png \
+/home/alex/Kangaeru/Kangaeru/proj.android/assets/Icon.png \
+/home/alex/Kangaeru/Kangaeru/proj.android/assets/dictionaries \
 /home/alex/Kangaeru/Kangaeru/proj.android/assets/fonts/Marker Felt.ttf \
+/home/alex/Kangaeru/Kangaeru/proj.android/assets/dictionaries/N5.plist \
 /home/alex/Kangaeru/Kangaeru/proj.android/bin/AndroidManifest.xml \
