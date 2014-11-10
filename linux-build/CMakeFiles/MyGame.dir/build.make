@@ -141,12 +141,36 @@ CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides: CMakeFiles/MyGame.dir/Cl
 
 CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o
 
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o: ../Classes/CustomTableViewCell.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/Kangaeru/Kangaeru/linux-build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o -c /home/alex/Kangaeru/Kangaeru/Classes/CustomTableViewCell.cpp
+
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/Kangaeru/Kangaeru/Classes/CustomTableViewCell.cpp > CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/Kangaeru/Kangaeru/Classes/CustomTableViewCell.cpp -o CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o
+
 # Object files for target MyGame
 MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o"
+"CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o"
 
 # External object files for target MyGame
 MyGame_EXTERNAL_OBJECTS =
@@ -155,6 +179,7 @@ bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
 bin/MyGame: lib/libspine.a
 bin/MyGame: lib/libcocostudio.a
@@ -178,6 +203,7 @@ CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requ
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/MainMenu.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/KanjiBase.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o.requires
 .PHONY : CMakeFiles/MyGame.dir/requires
 
 CMakeFiles/MyGame.dir/clean:

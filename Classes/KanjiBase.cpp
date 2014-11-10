@@ -1,6 +1,10 @@
 #include "KanjiBase.h"
+#include "CustomTableViewCell.h"
+#include <iostream>
 
 USING_NS_CC;
+USING_NS_CC_EXT;
+using namespace std;
 
 KanjiBase::KanjiBase(void){
 
@@ -54,6 +58,7 @@ Menu *KanjiBase::createKBMenu(){
    auto back_menu = MenuItemLabel::create(LabelTTF::create("Back", "Arial", 48), [](Ref* sender){Director::getInstance()->popScene();});
    auto N5_dictionary = MenuItemLabel::create(LabelTTF::create("N5 Dictionary", "Arial", 48), this, menu_selector(KanjiBase::N5Callback));
    auto menu = Menu::create(back_menu,N5_dictionary,nullptr);
+   menu->alignItemsVertically();
    menu->setPosition(Point(size.width/2, size.height/2));
    
    return menu;
@@ -65,5 +70,83 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
    this->removeChild(this->kanjiBaseMenu);
    
    //now display the dictionary
+   //open dictionary plist file
+   std::string path = FileUtils::getInstance()->fullPathForFilename("dictionaries/N5.plist");
+   N5Dict = FileUtils::getInstance()->getValueMapFromFile(path);
+   cout << N5Dict.size() << endl;
+   numOfCells = N5Dict.size();
+   
+   //create a tableview
+   Size winSize = Director::getInstance()->getWinSize();
+   TableView *pTable = TableView::create(this, winSize);
+   pTable->setDirection(ScrollView::Direction::VERTICAL);
+   pTable->setPosition(Vec2(winSize.width/2,0));
+   pTable->setDelegate(this);
+   this->addChild(pTable);
+   pTable->reloadData();
+
+   //traverse dictionary
+   for(int i = 0; i < N5Dict.size(); i++){
+      string str = std::to_string(i);
+      const char *str1 = str.c_str();
+      ValueMap kanjiEntry = N5Dict.at(str1).asValueMap();
+      auto kanjiName = kanjiEntry.at("Kanji").asString();
+      cout << kanjiName << endl;
+   }
+   
    //tbd
+   
+}
+
+//tableview functions
+void KanjiBase::tableCellTouched(TableView* table, TableViewCell* cell)
+{
+    CCLOG("cell touched at index: %ld", cell->getIdx());
+}
+
+Size KanjiBase::tableCellSizeForIndex(TableView *table, ssize_t idx)
+{
+
+    return Size(60, 60);
+}
+
+TableViewCell* KanjiBase::tableCellAtIndex(TableView *table, ssize_t idx)
+{
+   //creates the numbers for the string, with idx being the index
+   cout << std::to_string(idx) << endl;
+   auto kanjiEntry = N5Dict.at(std::to_string(idx)).asValueMap();
+   std::string kanjiString = kanjiEntry.at("Kanji").asString();
+   cout << kanjiString << endl;
+   TableViewCell *cell = table->dequeueCell();
+   //creates default icon with index if table doesn't contain cell
+   if (!cell) {
+      cell = new CustomTableViewCell();
+      cell->autorelease();
+      //create default icon sprite
+      auto sprite = Sprite::create("Icon.png");
+      sprite->setAnchorPoint(Vec2::ZERO);
+      sprite->setPosition(Vec2(0, 0));
+      cell->addChild(sprite);
+      
+      //generates the numbered label for each icon
+      auto label = Label::createWithSystemFont(kanjiString, "falcon.ttf", 20.0);
+      label->setPosition(Vec2::ZERO);
+      label->setAnchorPoint(Vec2::ZERO);
+      label->setTag(123);
+      cell->addChild(label);
+   }
+   //generates cell's label
+   else
+   {
+      auto label = (Label*)cell->getChildByTag(123);
+      label->setString(kanjiString);
+   }
+
+
+   return cell;
+}
+
+ssize_t KanjiBase::numberOfCellsInTableView(TableView *table)
+{
+    return numOfCells;
 }

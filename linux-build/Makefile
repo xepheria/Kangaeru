@@ -291,6 +291,30 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
+Classes/CustomTableViewCell.o: Classes/CustomTableViewCell.cpp.o
+.PHONY : Classes/CustomTableViewCell.o
+
+# target to build an object file
+Classes/CustomTableViewCell.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.o
+.PHONY : Classes/CustomTableViewCell.cpp.o
+
+Classes/CustomTableViewCell.i: Classes/CustomTableViewCell.cpp.i
+.PHONY : Classes/CustomTableViewCell.i
+
+# target to preprocess a source file
+Classes/CustomTableViewCell.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.i
+.PHONY : Classes/CustomTableViewCell.cpp.i
+
+Classes/CustomTableViewCell.s: Classes/CustomTableViewCell.cpp.s
+.PHONY : Classes/CustomTableViewCell.s
+
+# target to generate assembly for a file
+Classes/CustomTableViewCell.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CustomTableViewCell.cpp.s
+.PHONY : Classes/CustomTableViewCell.cpp.s
+
 Classes/KanjiBase.o: Classes/KanjiBase.cpp.o
 .PHONY : Classes/KanjiBase.o
 
@@ -387,6 +411,9 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/CustomTableViewCell.o"
+	@echo "... Classes/CustomTableViewCell.i"
+	@echo "... Classes/CustomTableViewCell.s"
 	@echo "... Classes/KanjiBase.o"
 	@echo "... Classes/KanjiBase.i"
 	@echo "... Classes/KanjiBase.s"
