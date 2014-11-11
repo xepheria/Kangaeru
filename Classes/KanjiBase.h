@@ -17,7 +17,7 @@ public:
 
    virtual bool init() override;
    
-   void backToMainMenu();
+   void backToMainMenu(cocos2d::Ref *pSender);
    void N5Callback(cocos2d::Ref *pSender);
    cocos2d::Menu *createKBMenu();
    
@@ -33,6 +33,10 @@ private:
    cocos2d::Menu *kanjiBaseMenu;
    cocos2d::ValueMap N5Dict;
    ssize_t numOfCells;
+   cocos2d::Menu *kanjiInfoMenu = nullptr;
+   cocos2d::MenuItemLabel *kanjiInfoButton;
+   cocos2d::LabelTTF *kanjiLabel;
+   cocos2d::extension::TableView *pTable;
 };
 
 
