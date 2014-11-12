@@ -35,7 +35,6 @@ private:
    ssize_t numOfCells;
    cocos2d::Menu *kanjiInfoMenu = nullptr;
    cocos2d::MenuItemLabel *kanjiInfoButton;
-   cocos2d::Sprite *kanjiMenuBackground;
    cocos2d::LabelTTF *kanjiLabel;
    cocos2d::extension::TableView *pTable;
 };

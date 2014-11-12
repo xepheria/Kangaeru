@@ -6,7 +6,7 @@
         <key>112</key>
         <dict>
             <key>Sample2</key>
-            <string>皆さん, 聞いてください。</string>
+            <string>皆さん,聞いてください。</string>
             <key>S1trans</key>
             <string>Do you listen to music?</string>
             <key>Sample1</key>
@@ -18,7 +18,7 @@
             <key>Kunyomi</key>
             <string>き</string>
             <key>Onyomi</key>
-            <string>ブン, モン</string>
+            <string>ブン,モン</string>
             <key>Kanji</key>
             <string>聞</string>
         </dict>
@@ -63,7 +63,7 @@
             <key>Definition</key>
             <string>Talk, Story</string>
             <key>Kunyomi</key>
-            <string>はな, はなし</string>
+            <string>はな,はなし</string>
             <key>Onyomi</key>
             <string>ワ</string>
             <key>Kanji</key>
@@ -80,7 +80,7 @@
             <key>Definition</key>
             <string>New</string>
             <key>Kunyomi</key>
-            <string>あたら, あら, にい</string>
+            <string>あたら,あら,にい</string>
             <key>Onyomi</key>
             <string>シン</string>
             <key>Kanji</key>
@@ -118,7 +118,7 @@
             <key>Kunyomi</key>
             <string>みち</string>
             <key>Onyomi</key>
-            <string>ドウ, トウ</string>
+            <string>ドウ,トウ</string>
             <key>Kanji</key>
             <string>道</string>
         </dict>
@@ -135,7 +135,7 @@
             <key>Definition</key>
             <string>Fish</string>
             <key>Kunyomi</key>
-            <string>うお, さかな, ざかな</string>
+            <string>うお,さかな,ざかな</string>
             <key>Onyomi</key>
             <string>ギョ</string>
             <key>Kanji</key>
@@ -154,7 +154,7 @@
             <key>Definition</key>
             <string>Write</string>
             <key>Kunyomi</key>
-            <string>がき, か</string>
+            <string>がき,か</string>
             <key>Onyomi</key>
             <string>ショ</string>
             <key>Kanji</key>
@@ -163,7 +163,7 @@
         <key>99</key>
         <dict>
             <key>Sample2</key>
-            <string>子供のとき, 犬がいました。</string>
+            <string>子供のとき,犬がいました。</string>
             <key>S1trans</key>
             <string>What time did you wake up?</string>
             <key>Sample1</key>
@@ -173,7 +173,7 @@
             <key>Definition</key>
             <string>Time</string>
             <key>Kunyomi</key>
-            <string>とく, どき</string>
+            <string>とく,どき</string>
             <key>Onyomi</key>
             <string>ジ</string>
             <key>Kanji</key>
@@ -190,7 +190,7 @@
             <key>Kunyomi</key>
             <string>みなみ</string>
             <key>Onyomi</key>
-            <string>ナン, ナ</string>
+            <string>ナン,ナ</string>
             <key>Kanji</key>
             <string>南</string>
         </dict>
@@ -207,9 +207,9 @@
             <key>Definition</key>
             <string>Eat</string>
             <key>Kunyomi</key>
-            <string>く, た, は</string>
+            <string>く,た,は</string>
             <key>Onyomi</key>
-            <string>ショク, ジキ</string>
+            <string>ショク,ジキ</string>
             <key>Kanji</key>
             <string>食</string>
         </dict>
@@ -249,7 +249,7 @@
             <key>Kunyomi</key>
             <string>おんな</string>
             <key>Onyomi</key>
-            <string>ジョ, ニョ</string>
+            <string>ジョ,ニョ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -289,7 +289,7 @@
             <key>Kunyomi</key>
             <string>な</string>
             <key>Onyomi</key>
-            <string>メイ, ミョウ</string>
+            <string>メイ,ミョウ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -346,7 +346,7 @@
             <key>Kunyomi</key>
             <string>みみ</string>
             <key>Onyomi</key>
-            <string>ジ, ニ</string>
+            <string>ジ,ニ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -424,7 +424,7 @@
             <key>Definition</key>
             <string>Rain</string>
             <key>Kunyomi</key>
-            <string>あめ, あま, さめ</string>
+            <string>あめ,あま,さめ</string>
             <key>Onyomi</key>
             <string>ウ</string>
             <key>Grade</key>
@@ -441,7 +441,7 @@
             <key>Sample2</key>
             <string>野菜は安いです。</string>
             <key>Compounds</key>
-            <string>安い（やすい）, 目安（めやす）, 大安（たいあん, だいあん）, 安気（あんき），安手（やすで），安々（やすやす），安車（あんしゃ）</string>
+            <string>安い（やすい）,目安（めやす）,大安（たいあん,だいあん）,安気（あんき），安手（やすで），安々（やすやす），安車（あんしゃ）</string>
             <key>Definition</key>
             <string>Cheap</string>
             <key>Kunyomi</key>
@@ -462,7 +462,7 @@
             <key>Definition</key>
             <string>Long</string>
             <key>Kunyomi</key>
-            <string>なが, おさ</string>
+            <string>なが,おさ</string>
             <key>Onyomi</key>
             <string>チョウ</string>
             <key>Kanji</key>
@@ -483,7 +483,7 @@
             <key>Kunyomi</key>
             <string>ひと</string>
             <key>Onyomi</key>
-            <string>ジン, ニン</string>
+            <string>ジン,ニン</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -504,7 +504,7 @@
             <key>Kunyomi</key>
             <string>み・る</string>
             <key>Onyomi</key>
-            <string>ケン, ゲン</string>
+            <string>ケン,ゲン</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -523,9 +523,9 @@
             <key>Definition</key>
             <string>Money</string>
             <key>Kunyomi</key>
-            <string>かね, かな, がな</string>
+            <string>かね,かな,がな</string>
             <key>Onyomi</key>
-            <string>キン, コン, ゴン</string>
+            <string>キン,コン,ゴン</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -711,7 +711,7 @@
             <key>Sample1</key>
             <string>かばんの中（なか）になんですか。</string>
             <key>Compounds</key>
-            <string>1．中国, 　ちゅうごく；2．</string>
+            <string>1．中国,　ちゅうごく；2．</string>
             <key>PictureURL</key>
             <string>*</string>
             <key>Definition</key>
@@ -834,7 +834,7 @@
         <key>2</key>
         <dict>
             <key>Compounds</key>
-            <string>１．三日月, 　みかずき</string>
+            <string>１．三日月,　みかずき</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/three-timeline-display-panel-number-146658/</string>
             <key>Definition</key>
@@ -861,7 +861,7 @@
             <key>Definition</key>
             <string>Store</string>
             <key>Kunyomi</key>
-            <string>店, たな</string>
+            <string>店,たな</string>
             <key>Onyomi</key>
             <string>テン</string>
             <key>Kanji</key>
@@ -912,7 +912,7 @@
         <key>4</key>
         <dict>
             <key>Compounds</key>
-            <string>１．五分, 　ごぶ</string>
+            <string>１．五分,　ごぶ</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/creation-day-five-religion-25828/</string>
             <key>Definition</key>
@@ -971,11 +971,11 @@
             <key>Sample2</key>
             <string>それは何ですか。</string>
             <key>Compounds</key>
-            <string>何時（いつ, なんじ）, 何千（なんぜん）, 何百（なんびゃく）, 何十（なんじゅう）, 何人（なにびと, なんにん, なにじん）, 何気ない（なにげない）, 何々（なになに）, 何月（なんがつ）, 何日（なんにち）, 何年（なんねん）, 何語（なにご, なんご）, 何名（なんめい）, </string>
+            <string>何時（いつ,なんじ）,何千（なんぜん）,何百（なんびゃく）,何十（なんじゅう）,何人（なにびと,なんにん,なにじん）,何気ない（なにげない）,何々（なになに）,何月（なんがつ）,何日（なんにち）,何年（なんねん）,何語（なにご,なんご）,何名（なんめい）,</string>
             <key>Definition</key>
             <string>What</string>
             <key>Kunyomi</key>
-            <string>なん, なに</string>
+            <string>なん,なに</string>
             <key>Onyomi</key>
             <string>カ</string>
             <key>Kanji</key>
@@ -1001,7 +1001,7 @@
         <key>0</key>
         <dict>
             <key>Compounds</key>
-            <string>１．一人, ひとり；２．一年, 　いちねん；３．一時, 　いちじ</string>
+            <string>１．一人, ひとり；２．一年,　いちねん；３．一時,　いちじ</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/number-1-alphabet-abc-gold-146021/</string>
             <key>Definition</key>
@@ -1072,7 +1072,7 @@
             <key>Kunyomi</key>
             <string>あか</string>
             <key>Onyomi</key>
-            <string>セキ, シャク</string>
+            <string>セキ,シャク</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1104,7 +1104,7 @@
             <key>S1trans</key>
             <string>This week, what will you do?</string>
             <key>Sample1</key>
-            <string>今週, 何をしますか。</string>
+            <string>今週,何をしますか。</string>
             <key>Definition</key>
             <string>Week</string>
             <key>Onyomi</key>
@@ -1136,9 +1136,9 @@
             <key>Definition</key>
             <string>Space, Room, Interval</string>
             <key>Kunyomi</key>
-            <string>あいだ, ま, あい</string>
+            <string>あいだ,ま,あい</string>
             <key>Onyomi</key>
-            <string>カン, ケン</string>
+            <string>カン,ケン</string>
             <key>Kanji</key>
             <string>間</string>
         </dict>
@@ -1197,7 +1197,7 @@
             <key>Kunyomi</key>
             <string>ちから</string>
             <key>Onyomi</key>
-            <string>リキ, リョク</string>
+            <string>リキ,リョク</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1218,7 +1218,7 @@
             <key>Kunyomi</key>
             <string>みぎ</string>
             <key>Onyomi</key>
-            <string>ウ, ユウ</string>
+            <string>ウ,ユウ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1231,7 +1231,7 @@
             <key>Sample1</key>
             <string>ほんはつくえに下（した）です。</string>
             <key>Compounds</key>
-            <string>1．下手, 　へた</string>
+            <string>1．下手,　へた</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/arrow-button-down-forward-glossy-157545/</string>
             <key>Definition</key>
@@ -1298,7 +1298,7 @@
             <key>Definition</key>
             <string>High, Tall</string>
             <key>Kunyomi</key>
-            <string>たか, だか</string>
+            <string>たか,だか</string>
             <key>Onyomi</key>
             <string>コウ</string>
             <key>Kanji</key>
@@ -1336,7 +1336,7 @@
             <key>Definition</key>
             <string>Fire</string>
             <key>Kunyomi</key>
-            <string>ひ, び, ほ</string>
+            <string>ひ,び,ほ</string>
             <key>Onyomi</key>
             <string>カ</string>
             <key>Grade</key>
@@ -1357,7 +1357,7 @@
             <key>Kunyomi</key>
             <string>いき</string>
             <key>Onyomi</key>
-            <string>キ, ケ</string>
+            <string>キ,ケ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1395,7 +1395,7 @@
             <key>Definition</key>
             <string>Enter</string>
             <key>Kunyomi</key>
-            <string>は・いる, い・る</string>
+            <string>は・いる,い・る</string>
             <key>Onyomi</key>
             <string>ヌウ</string>
             <key>Grade</key>
@@ -1406,11 +1406,11 @@
         <key>37</key>
         <dict>
             <key>Sample2</key>
-            <string>私たちは, 男です。</string>
+            <string>私たちは,男です。</string>
             <key>S1trans</key>
             <string>He is the eldest.</string>
             <key>Sample1</key>
-            <string>彼は, 長男です。</string>
+            <string>彼は,長男です。</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/static/uploads/photo/2012/04/28/19/07/male-44078_640.png</string>
             <key>Definition</key>
@@ -1418,7 +1418,7 @@
             <key>Kunyomi</key>
             <string>おとこ</string>
             <key>Onyomi</key>
-            <string>ダン, ナン</string>
+            <string>ダン,ナン</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1437,7 +1437,7 @@
             <key>Kunyomi</key>
             <string>ふみ</string>
             <key>Onyomi</key>
-            <string>ブン, モン</string>
+            <string>ブン,モン</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1471,13 +1471,13 @@
             <key>Sample2</key>
             <string>母に会います。</string>
             <key>Compounds</key>
-            <string>会見（かいけん）, 会社（かいしゃ）, 会長（かいちょう）, 国会（こっかい）, 社会（しゃかい）, 大会（たかい）, 会食（かいしょく）, 会話（かいわ）, 学会（がっかい）, 会う（あう）</string>
+            <string>会見（かいけん）,会社（かいしゃ）,会長（かいちょう）,国会（こっかい）,社会（しゃかい）,大会（たかい）,会食（かいしょく）,会話（かいわ）,学会（がっかい）,会う（あう）</string>
             <key>Definition</key>
             <string>Meet</string>
             <key>Kunyomi</key>
             <string>あ</string>
             <key>Onyomi</key>
-            <string>カイ, エ</string>
+            <string>カイ,エ</string>
             <key>Kanji</key>
             <string>会</string>
         </dict>
@@ -1492,7 +1492,7 @@
             <key>Definition</key>
             <string>Character</string>
             <key>Kunyomi</key>
-            <string>あざ, あざな, な</string>
+            <string>あざ,あざな,な</string>
             <key>Onyomi</key>
             <string>ジ</string>
             <key>Grade</key>
@@ -1530,9 +1530,9 @@
             <key>Definition</key>
             <string>Correct</string>
             <key>Kunyomi</key>
-            <string>ただ・しい, まさ</string>
+            <string>ただ・しい,まさ</string>
             <key>Onyomi</key>
-            <string>セイ, ショウ</string>
+            <string>セイ,ショウ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1585,7 +1585,7 @@
             <key>Definition</key>
             <string>King</string>
             <key>Onyomi</key>
-            <string>オウ, ノウ</string>
+            <string>オウ,ノウ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1640,7 +1640,7 @@
             <key>Definition</key>
             <string>Mother</string>
             <key>Kunyomi</key>
-            <string>はは, も</string>
+            <string>はは,も</string>
             <key>Onyomi</key>
             <string>ボ</string>
             <key>Kanji</key>
@@ -1670,7 +1670,7 @@
         <key>1</key>
         <dict>
             <key>Compounds</key>
-            <string>１．二人, 　ふたり；2．二子, 　ふたご</string>
+            <string>１．二人,　ふたり；2．二子,　ふたご</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/number-2-alphabet-abc-gold-146022/</string>
             <key>Definition</key>
@@ -1777,7 +1777,7 @@
             <key>Kunyomi</key>
             <string>の</string>
             <key>Onyomi</key>
-            <string>イン, オン</string>
+            <string>イン,オン</string>
             <key>Kanji</key>
             <string>飲</string>
         </dict>
@@ -1794,7 +1794,7 @@
             <key>Definition</key>
             <string>Ball, Jewel</string>
             <key>Kunyomi</key>
-            <string>たま, だま</string>
+            <string>たま,だま</string>
             <key>Onyomi</key>
             <string>ギョク</string>
             <key>Grade</key>
@@ -1872,7 +1872,7 @@
             <key>Kunyomi</key>
             <string>あお</string>
             <key>Onyomi</key>
-            <string>セイ, ショウ</string>
+            <string>セイ,ショウ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1891,9 +1891,9 @@
             <key>Definition</key>
             <string>White</string>
             <key>Kunyomi</key>
-            <string>しろ, しら</string>
+            <string>しろ,しら</string>
             <key>Onyomi</key>
-            <string>ハク, ビャク</string>
+            <string>ハク,ビャク</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1908,7 +1908,7 @@
             <key>Sample2</key>
             <string>日本に行きます。</string>
             <key>Compounds</key>
-            <string>一行（いちぎょう, いっこう）, 行く（いく）, </string>
+            <string>一行（いちぎょう,いっこう）,行く（いく）,</string>
             <key>PictureURL</key>
             <string>http://upload.wikimedia.org/wikipedia/commons/9/91/Hyozu-jinja_%E5%85%B5%E4%B8%BB%E7%A5%9E%E7%A4%BE%E4%BE%8B%E7%A5%AD%EF%BC%88%E8%A5%BF%E8%84%87%E5%B8%82%E9%BB%92%E7%94%B0%E5%BA%84%E7%94%BA%E5%B2%A1%EF%BC%892011.10.9_%E5%B8%B0%E3%82%8A%E9%81%93%E3%80%81%E8%A1%8C%E3%81%8F%E4%BA%BA%E6%9D%A5%E3%82%8B%E4%BA%BA_DSCF1267.jpg</string>
             <key>Definition</key>
@@ -1916,7 +1916,7 @@
             <key>Kunyomi</key>
             <string>い</string>
             <key>Onyomi</key>
-            <string>コウ, ギョウ</string>
+            <string>コウ,ギョウ</string>
             <key>Kanji</key>
             <string>行</string>
         </dict>
@@ -1929,13 +1929,13 @@
             <key>Sample2</key>
             <string>飲み物が多いでした。</string>
             <key>Compounds</key>
-            <string>多大（ただい）, 大目（おおめ）, 多年（たねん）, 多々（たた）, 多雨（たう）, 多言（たげん）, 多食（たしょく）, 多読（たどく）, 多い（おおい）</string>
+            <string>多大（ただい）,大目（おおめ）,多年（たねん）,多々（たた）,多雨（たう）,多言（たげん）,多食（たしょく）,多読（たどく）,多い（おおい）</string>
             <key>PictureURL</key>
             <string>http://upload.wikimedia.org/wikipedia/commons/8/8e/Rubber_duckies_So_many_ducks.jpg</string>
             <key>Definition</key>
             <string>Many</string>
             <key>Kunyomi</key>
-            <string>おお, まさ</string>
+            <string>おお,まさ</string>
             <key>Onyomi</key>
             <string>タ</string>
             <key>Kanji</key>
@@ -1950,13 +1950,13 @@
             <key>Sample2</key>
             <string>関西で住んでいました。</string>
             <key>Compounds</key>
-            <string>東西（とうざい）, 北西（ほくせい）, 南西（なんせい）, 西南（せいなん）, 西日（にしび）, 西北（せいほく）, </string>
+            <string>東西（とうざい）,北西（ほくせい）,南西（なんせい）,西南（せいなん）,西日（にしび）,西北（せいほく）,</string>
             <key>Definition</key>
             <string>West</string>
             <key>Kunyomi</key>
             <string>にし</string>
             <key>Onyomi</key>
-            <string>セイ, サイ</string>
+            <string>セイ,サイ</string>
             <key>Kanji</key>
             <string>西</string>
         </dict>
@@ -1975,7 +1975,7 @@
             <key>Kunyomi</key>
             <string>こ</string>
             <key>Onyomi</key>
-            <string>シ, ス</string>
+            <string>シ,ス</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -1996,7 +1996,7 @@
             <key>Kunyomi</key>
             <string>ひだり</string>
             <key>Onyomi</key>
-            <string>セ, シャ</string>
+            <string>セ,シャ</string>
             <key>Grade</key>
             <string>X</string>
             <key>Kanji</key>
@@ -2007,11 +2007,11 @@
             <key>S1trans</key>
             <string>Everyday, I eat breakfast.</string>
             <key>Sample1</key>
-            <string>毎日, 朝ごはんを食べます。</string>
+            <string>毎日,朝ごはんを食べます。</string>
             <key>Sample2</key>
-            <string>毎朝, 歯を磨きます。</string>
+            <string>毎朝,歯を磨きます。</string>
             <key>Compounds</key>
-            <string>毎日（まいにち）, 毎週（まいしゅう）, 毎月（まいつき, まいげつ）, 毎年（まいとし）, 毎時（まいじ）, 毎々（まいまい）, 毎食（まいしょく）, 日毎に（ひごｔに）, 年毎に（としごとに）, 人毎（ひとごと）, 一年毎（いちねんごと）, </string>
+            <string>毎日（まいにち）,毎週（まいしゅう）,毎月（まいつき,まいげつ）,毎年（まいとし）,毎時（まいじ）,毎々（まいまい）,毎食（まいしょく）,日毎に（ひごｔに）,年毎に（としごとに）,人毎（ひとごと）,一年毎（いちねんごと）,</string>
             <key>Definition</key>
             <string>Every</string>
             <key>Kunyomi</key>
@@ -2028,7 +2028,7 @@
             <key>Sample1</key>
             <string>そのまどはドアに上（うえ）です。</string>
             <key>Compounds</key>
-            <string>1．見上げる, 　みあげる；2．上手, じょうず</string>
+            <string>1．見上げる,　みあげる；2．上手, じょうず</string>
             <key>PictureURL</key>
             <string>http://pixabay.com/en/arrow-upward-green-pointing-24846/</string>
             <key>Definition</key>
@@ -2045,9 +2045,9 @@
         <key>88</key>
         <dict>
             <key>Compounds</key>
-            <string>社会（しゃかい）, 社長（しゃちょう）, 会社（かいしゃ）, 本社（ほんしゃ）, 社交（しゃこう）, 社名（しゃめい）, 社会学（しゃかいがく）, </string>
+            <string>社会（しゃかい）,社長（しゃちょう）,会社（かいしゃ）,本社（ほんしゃ）,社交（しゃこう）,社名（しゃめい）,社会学（しゃかいがく）,</string>
             <key>PictureURL</key>
-            <string>http://upload.wikimedia.org/wikipedia/commons/3/3e/Small_shrines_of_Shiogama-jinja_shrine, Shiogama_city.JPG</string>
+            <string>http://upload.wikimedia.org/wikipedia/commons/3/3e/Small_shrines_of_Shiogama-jinja_shrine,Shiogama_city.JPG</string>
             <key>Definition</key>
             <string>Shrine, Company</string>
             <key>Kunyomi</key>
@@ -2066,11 +2066,11 @@
             <key>Sample2</key>
             <string>時々言葉が忘れちゃった。</string>
             <key>Compounds</key>
-            <string>言う（いう）, 言語（げんご）, 言い出す（いいだす）, 一言（ひとこと）, 言行（げんこう）, 二言（にごん）, 名言（めおいげん）言海（げんかい）, 言語学（げんごがく）, 言語名（げんごめい）, </string>
+            <string>言う（いう）,言語（げんご）,言い出す（いいだす）,一言（ひとこと）,言行（げんこう）,二言（にごん）,名言（めおいげん）言海（げんかい）,言語学（げんごがく）,言語名（げんごめい）,</string>
             <key>Definition</key>
             <string>Say</string>
             <key>Kunyomi</key>
-            <string>李, こと</string>
+            <string>李,こと</string>
             <key>Onyomi</key>
             <string>ゲン</string>
             <key>Kanji</key>
@@ -2094,7 +2094,7 @@
         <key>68</key>
         <dict>
             <key>Sample2</key>
-            <string>彼らは, 石川に行く。</string>
+            <string>彼らは,石川に行く。</string>
             <key>S1trans</key>
             <string>It's a very rocky soil, isn't it?</string>
             <key>Sample1</key>
@@ -2106,7 +2106,7 @@
             <key>Kunyomi</key>
             <string>いし</string>
             <key>Onyomi</key>
-            <string>セキ, シャク, コク</string>
+            <string>セキ,シャク,コク</string>
             <key>Kanji</key>
             <string>石</string>
         </dict>
@@ -2119,7 +2119,7 @@
             <key>Sample2</key>
             <string>中国はとても大きいです。</string>
             <key>Compounds</key>
-            <string>国会（こっかい）, 中国（ちゅうごく）, 大国（たいこく）, 国語（こくご）, 国電（こくでん）, 国道（こくどう）, 国名（こくめい）, 国々（くにぐに）, 母国語（ぼこくご）, 王国（おうこく）, 本国（ほんごく）, 出国（しゅっこく, しゅつごく）, 中国人（ちゅうごくじん）, 国王（こくおう）, 国大（こくだい）, 国体（こくたい）, 国学（こくがく）, </string>
+            <string>国会（こっかい）,中国（ちゅうごく）,大国（たいこく）,国語（こくご）,国電（こくでん）,国道（こくどう）,国名（こくめい）,国々（くにぐに）,母国語（ぼこくご）,王国（おうこく）,本国（ほんごく）,出国（しゅっこく,しゅつごく）,中国人（ちゅうごくじん）,国王（こくおう）,国大（こくだい）,国体（こくたい）,国学（こくがく）,</string>
             <key>PictureURL</key>
             <string>http://upload.wikimedia.org/wikipedia/commons/e/ec/1855_Colton_Map_of_Japan_-_Geographicus_-_Japan-colton-1855.jpg</string>
             <key>Definition</key>
@@ -2155,17 +2155,17 @@
         <key>95</key>
         <dict>
             <key>Sample2</key>
-            <string>卒業の後, 何をしたい。</string>
+            <string>卒業の後,何をしたい。</string>
             <key>S1trans</key>
             <string>After homework, I watch a movie.</string>
             <key>Sample1</key>
-            <string>宿題をしたの後で, 映画を見ます。</string>
+            <string>宿題をしたの後で,映画を見ます。</string>
             <key>Definition</key>
             <string>Behind, After</string>
             <key>Kunyomi</key>
-            <string>のち, うし</string>
+            <string>のち,うし</string>
             <key>Onyomi</key>
-            <string>ゴ, コウ</string>
+            <string>ゴ,コウ</string>
             <key>Kanji</key>
             <string>後</string>
         </dict>

@@ -29,6 +29,9 @@ public:
    virtual cocos2d::extension::TableViewCell* tableCellAtIndex(cocos2d::extension::TableView *table, ssize_t idx);
    virtual ssize_t numberOfCellsInTableView(cocos2d::extension::TableView *table);
    
+   //wrap text function for displaying kanji information
+   std::string wrap(const char*, size_t);
+   
 private:
    cocos2d::Menu *kanjiBaseMenu;
    cocos2d::ValueMap N5Dict;

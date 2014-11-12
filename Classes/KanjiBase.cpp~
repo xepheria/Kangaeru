@@ -1,6 +1,8 @@
 #include "KanjiBase.h"
 #include "CustomTableViewCell.h"
 #include <iostream>
+#include <sstream>
+#include <string>
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -54,6 +56,7 @@ void KanjiBase::backToMainMenu(cocos2d::Ref *pSender){
    if(pSender != nullptr){
       this->removeChild(pTable);
       this->removeChild(kanjiInfoMenu);
+      this->removeChild(kanjiLabel);
       this->removeChildByTag(50);
    }
 }
@@ -68,6 +71,29 @@ Menu *KanjiBase::createKBMenu(){
    menu->setPosition(Point(size.width/2, size.height/2));
    
    return menu;
+}
+
+string KanjiBase::wrap(const char *text, size_t line_length = 20)
+{
+   istringstream words(text);
+   ostringstream wrapped;
+   string word;
+   
+   if(words >> word){
+      wrapped << word;
+      size_t space_left = line_length - word.length();
+      while(words >> word){
+         if(space_left < word.length() + 1){
+            wrapped << '\n' << word;
+            space_left = line_length - word.length();
+         } else
+         {
+            wrapped << ' ' << word;
+            space_left -= word.length() + 1;
+         }
+      }
+   }
+   return wrapped.str();
 }
 
 //Open dictionary file
@@ -87,20 +113,27 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
    
    //init kanjiInfoMenu
    cout << "Create menu" << endl;
-   kanjiLabel = LabelTTF::create("some info about the kanji", "fonts/falcon.ttf", 34);
+   kanjiLabel = LabelTTF::create("some info about the kanji", "fonts/falcon.ttf", 28);
    kanjiLabel->setColor(Color3B(246, 103, 51));
-   kanjiInfoButton = MenuItemLabel::create(kanjiLabel);
+   //kanjiInfoButton = MenuItemLabel::create(kanjiLabel);
    
    //create actual background image*****************
    auto kanjiMenuBackground = MenuItemImage::create("kanjiInfoBG.png", "kanjiInfoBG.png", "kanjiInfoBG.png");
    
-   kanjiInfoMenu = Menu::create(kanjiMenuBackground, kanjiInfoButton, nullptr);
-   kanjiInfoMenu->setPosition(Vec2(winSize.width*.8, winSize.height*.5));
+   kanjiInfoMenu = Menu::create(kanjiMenuBackground, nullptr);
+   kanjiInfoMenu->setPosition(Vec2(winSize.width*.75, winSize.height*.5));
+   kanjiInfoMenu->setAnchorPoint(Vec2(0.5, 0.5));
    
-   kanjiMenuBackground->setPosition(Vec2(-20, -20));
+   kanjiLabel->setPosition(kanjiInfoMenu->getPosition());
+   
+   //cout << kanjiLabel->getContentSize().width << endl;
+   //kanjiMenuBackground->setPosition(Vec2(kanjiLabel->getContentSize().width * -0.5, 0));
    
    kanjiInfoMenu->setVisible(false);
-   this->addChild(kanjiInfoMenu);
+   kanjiLabel->setVisible(false);
+   //***********set label as child of menu?
+   this->addChild(kanjiLabel, 1);
+   this->addChild(kanjiInfoMenu, 0);
    
    cout << "background location: " << kanjiMenuBackground->getPositionX() << " " << kanjiMenuBackground->getPositionY() << endl;
    cout << "menu location: " << kanjiInfoMenu->getPositionX() << " " << kanjiInfoMenu->getPositionY() << endl;
@@ -115,7 +148,7 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
    //create a tableview
    pTable = TableView::create(this, winSize);
    pTable->setDirection(ScrollView::Direction::VERTICAL);
-   pTable->setPosition(Vec2(winSize.width/2-50,0));
+   pTable->setPosition(Vec2(winSize.width * 0.25,0));
    pTable->setDelegate(this);
    pTable->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
    this->addChild(pTable);
@@ -138,13 +171,22 @@ void KanjiBase::N5Callback(cocos2d::Ref *pSender){
 void KanjiBase::tableCellTouched(TableView* table, TableViewCell* cell)
 {
     CCLOG("cell touched at index: %ld", cell->getIdx());
+    
     //display more information about the kanji
-    //String kanjiToLabel = 
-    kanjiLabel->setString("clicked a cell");
+    auto kanjiEntry = N5Dict.at(std::to_string(cell->getIdx())).asValueMap();
+    string KanjiToLabel = "Kanji: " + kanjiEntry.at("Kanji").asString() + "\n\n";
+    KanjiToLabel += "Definition: " + wrap((kanjiEntry.at("Definition").asString()).c_str()) + "\n\n";
+    if(kanjiEntry.at("Kunyomi") != kanjiEntry.end())
+      KanjiToLabel += "Kunyomi: " + wrap((kanjiEntry.at("Kunyomi").asString()).c_str()) + "\n\n";
+    if(kanjiEntry.at("Onyomi") != kanjiEntry.end())
+       KanjiToLabel += "Onyomi: " + wrap((kanjiEntry.at("Onyomi").asString()).c_str()) + "\n\n";
+    
+    kanjiLabel->setString(KanjiToLabel.c_str());
     cout << "clicked it" << endl;
     if(!kanjiInfoMenu->isVisible()){
       cout << "no good?" << endl;
       kanjiInfoMenu->setVisible(true); 
+      kanjiLabel->setVisible(true);
     }
 }
 
