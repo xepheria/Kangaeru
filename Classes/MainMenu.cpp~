@@ -58,7 +58,7 @@ bool MainMenu::init()
     // create and initialize a label
     
     CCString *labelString = CCString::createWithFormat("漢ガエル");
-    auto label = LabelTTF::create(labelString->getCString(), "falcon.ttf", 40);
+    auto label = LabelTTF::create(labelString->getCString(), "fonts/falcon.ttf", 40);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
