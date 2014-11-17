@@ -114,7 +114,7 @@ string KanjiBase::wrap(const char *text, size_t line_length = 20)
 void KanjiBase::addToExistingListCallback(cocos2d::Ref *pSender){
    MenuItemLabel *listLabel = dynamic_cast<MenuItemLabel*>(pSender);
    Label *listLabelLabel = dynamic_cast<Label*>(listLabel->getLabel());
-   string path = "userlists/" + listLabelLabel->getString() + ".plist";
+   string path = listLabelLabel->getString() + ".plist";
    path = FileUtils::getInstance()->getWritablePath() + path;
    cout << path << endl;
    
@@ -143,6 +143,13 @@ void KanjiBase::confirmNewListCallback(cocos2d::Ref *pSender){
    }
    else{
       userLists.push_back(newListName);
+      
+      MenuItemLabel *ref = dynamic_cast<MenuItemLabel*>(pSender);
+      auto addToDaMenu = MenuItemLabel::create(Label::create(newListName, "fonts/falcon.ttf", 28), this, menu_selector(KanjiBase::addToExistingListCallback));
+      addToDaMenu->setTag(ref->getTag());
+      cout << "addtodamenu tag: " << addToDaMenu->getTag() << endl;
+      _existingListsMenu->addChild(addToDaMenu);
+      _existingListsMenu->alignItemsVerticallyWithPadding(5);
       //now close the menu
       returnToAddToListCallback(pSender);
    }
@@ -164,6 +171,8 @@ void KanjiBase::returnToAddToListCallback(cocos2d::Ref *pSender){
 
 //opens the Create New List menu
 void KanjiBase::createNewListCallback(cocos2d::Ref *pSender){
+   
+
    if(_createNewListScreenUp == false){
       //disable underlying objects if needed
       _addToListMenu->setEnabled(false);
@@ -203,6 +212,8 @@ void KanjiBase::createNewListCallback(cocos2d::Ref *pSender){
       //create two buttons "back" and "confirm"
       auto backFromNewList = MenuItemLabel::create(Label::create("Back", "fonts/falcon.ttf", 40), this, menu_selector(KanjiBase::returnToAddToListCallback));
       auto confirmNewList = MenuItemLabel::create(Label::create("Confirm new \nlist", "fonts/falcon.ttf", 40), this, menu_selector(KanjiBase::confirmNewListCallback));
+      MenuItemImage *ref = dynamic_cast<MenuItemImage*>(pSender);
+      confirmNewList->setTag(ref->getTag());
       dynamic_cast<Label*>(confirmNewList->getLabel())->setAlignment(TextHAlignment::CENTER);
       
       //create menu
@@ -250,6 +261,7 @@ void KanjiBase::addToListCallback(cocos2d::Ref *pSender){
       
       //auto *addToListItem = MenuItemImage::create("addToListMenuButton.png", "addToListMenuButtonselected.png", this, menu_selector(KanjiBase::addToExistingListCallback));
       auto *makeNewListItem = MenuItemImage::create("makeNewListButton.png", "makeNewListButtonselected.png", this, menu_selector(KanjiBase::createNewListCallback));
+      makeNewListItem->setTag(ref->getTag());
       auto *backLabel = MenuItemLabel::create(Label::create("Back", "fonts/falcon.ttf", 48), this, menu_selector(KanjiBase::backAddToListCallback));
       
       _addToListMenu = Menu::create(makeNewListItem, backLabel, nullptr);
