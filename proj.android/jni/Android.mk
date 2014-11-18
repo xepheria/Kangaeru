@@ -14,7 +14,8 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
                    ../../Classes/MainMenu.cpp \
                    ../../Classes/KanjiBase.cpp \
-                   ../../Classes/CustomTableViewCell.cpp
+                   ../../Classes/CustomTableViewCell.cpp \
+                   ../../Classes/MatchingGame.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

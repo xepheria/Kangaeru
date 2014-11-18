@@ -61,6 +61,7 @@ set(GAME_SRC
   Classes/MainMenu.cpp
   Classes/KanjiBase.cpp
   Classes/CustomTableViewCell.cpp
+  Classes/MatchingGame.cpp
 )
 elseif ( WIN32 )
 set(GAME_SRC
@@ -71,6 +72,7 @@ set(GAME_SRC
   Classes/MainMenu.cpp
   Classes/KanjiBase.cpp
   Classes/CustomTableViewCell.cpp
+  Classes/MatchingGame.cpp
 )
 endif()
 
