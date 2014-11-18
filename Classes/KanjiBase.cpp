@@ -116,7 +116,7 @@ void KanjiBase::addToExistingListCallback(cocos2d::Ref *pSender){
    Label *listLabelLabel = dynamic_cast<Label*>(listLabel->getLabel());
    string path = listLabelLabel->getString() + ".plist";
    path = FileUtils::getInstance()->getWritablePath() + path;
-   cout << path << endl;
+   //cout << path << endl;
    
    ValueMap kanjiDict;
    //create new term
@@ -129,10 +129,20 @@ void KanjiBase::addToExistingListCallback(cocos2d::Ref *pSender){
    
    //add new term
    string index = to_string(kanjiDict.size());
-   kanjiDict[index.c_str()] = kanjiEntry;
-   //save new dictionary
-   cout << "success? " << FileUtils::getInstance()->writeToFile(kanjiDict, path) << endl;
-   
+   int found = 0;
+   for(unsigned int i = 0; i < kanjiDict.size(); i++){
+      string str = std::to_string(i);
+      const char *str1 = str.c_str();
+      ValueMap compareEntry = N5Dict.at(str1).asValueMap();
+      if(kanjiEntry.at("Kanji").asString().compare(compareEntry.at("Kanji").asString()) == 0){
+         found = 1;
+      }
+   }
+   if(!found){
+      //add entry and save new dictionary
+      kanjiDict[index.c_str()] = kanjiEntry;
+      FileUtils::getInstance()->writeToFile(kanjiDict, path);
+   }
    backAddToListCallback(pSender);
 }
 
@@ -148,7 +158,6 @@ void KanjiBase::confirmNewListCallback(cocos2d::Ref *pSender){
       MenuItemLabel *ref = dynamic_cast<MenuItemLabel*>(pSender);
       auto addToDaMenu = MenuItemLabel::create(Label::create(newListName, "fonts/falcon.ttf", 28), this, menu_selector(KanjiBase::addToExistingListCallback));
       addToDaMenu->setTag(ref->getTag());
-      cout << "addtodamenu tag: " << addToDaMenu->getTag() << endl;
       _existingListsMenu->addChild(addToDaMenu);
       _existingListsMenu->alignItemsVerticallyWithPadding(5);
       //now close the menu
@@ -247,7 +256,6 @@ void KanjiBase::addToListCallback(cocos2d::Ref *pSender){
       N5back_menu->setEnabled(false);
    
       MenuItemImage *ref = dynamic_cast<MenuItemImage*>(pSender);
-      cout << ref->getTag() << endl;
       
       _addToListScreenUp = true;
       Size winSize = Director::getInstance()->getVisibleSize();
@@ -441,7 +449,6 @@ bool KanjiBase::onTextFieldInsertText(TextFieldTTF *sender, const char *text, si
 }
 
 bool KanjiBase::onTextFieldDeleteBackward(TextFieldTTF *sender, const char *delText, size_t nLen) {
-   cout << "backspace pressed" << endl;
    return TextFieldDelegate::onTextFieldDeleteBackward(sender, delText, nLen);
 }
 
@@ -450,7 +457,6 @@ bool KanjiBase::onVisit(TextFieldTTF *sender, Renderer *renderer, const Mat4 &tr
 }
 
 void KanjiBase::saveData(){
-   cout << UserDefault::getInstance()->getXMLFilePath() << endl;
    //set new number of lists, up to 10 max
    UserDefault::getInstance()->setIntegerForKey("numOfLists", userLists.size());
    

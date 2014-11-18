@@ -21,8 +21,9 @@ public:
    
    //start game with chosen list
    void startWithListCallback(cocos2d::Ref *pSender);
-   void askQuestion();
+   void askQuestion(float dt);
    void evaluateAnswer(cocos2d::Ref *pSender);
+   void updateScore();
    
 private:
    cocos2d::Menu *menu;
@@ -41,6 +42,12 @@ private:
    cocos2d::Sequence *blinkAction;
    cocos2d::Sprite *maru;
    cocos2d::Sprite *batsu;
+   
+   //score display
+   int currentCorrect;
+   int currentWrong;
+   cocos2d::Label *correctScore;
+   cocos2d::Label *wrongScore;
 };
 
 #endif // __MATCHINGGAME_H__

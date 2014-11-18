@@ -41,6 +41,12 @@ private:
    cocos2d::Sequence *blinkAction;
    cocos2d::Sprite *maru;
    cocos2d::Sprite *batsu;
+   
+   //score display
+   int currentCorrect;
+   int currentWrong;
+   cocos2d::Label *correctScore;
+   cocos2d::Label *wrongScore;
 };
 
 #endif // __MATCHINGGAME_H__
