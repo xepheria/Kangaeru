@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "KanjiBase.h"
+#include "MatchingGame.h"
 
 class MainMenu : public cocos2d::Layer
 {
@@ -20,6 +21,7 @@ public:
     
     //change scenes
     void transitionToKanjiBaseScene();
+    void toKanjiBaseScene();
     void toGameScene();
     
     // implement the "static create()" method manually

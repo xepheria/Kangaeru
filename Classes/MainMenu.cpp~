@@ -34,15 +34,18 @@ bool MainMenu::init()
     cocos2d::Vector<cocos2d::MenuItem*> pMenuItems;
     
     //game 1
-    cocos2d::MenuItem *pGame1Item = cocos2d::MenuItemImage::create("Game1Normal.png", "Game1Selected.png", this, menu_selector(MainMenu::menuGame1Callback));
+    auto *pGame1Item = MenuItemLabel::create(Label::create("Kanji Lists", "fonts/falcon.ttf", 60), this, menu_selector(MainMenu::menuGame1Callback));
+   dynamic_cast<Label*>(pGame1Item->getLabel())->enableOutline(Color4B::BLACK, 1);
     pMenuItems.pushBack(pGame1Item); //add to list
     
     //game 2
-    cocos2d::MenuItem *pGame2Item = cocos2d::MenuItemImage::create("Game2Normal.png", "Game2Selected.png", this, menu_selector(MainMenu::menuGame2Callback));
+    auto *pGame2Item = MenuItemLabel::create(Label::create("Game Demo", "fonts/falcon.ttf", 60), this, menu_selector(MainMenu::menuGame2Callback));
+    dynamic_cast<Label*>(pGame2Item->getLabel())->enableOutline(Color4B::BLACK, 1);
     pMenuItems.pushBack(pGame2Item);
     
     //close menu
-    cocos2d::MenuItem *pCloseItem = cocos2d::MenuItemImage::create("CloseNormal.png", "CloseSelected.png", this, menu_selector(MainMenu::menuCloseCallback));
+    auto *pCloseItem = MenuItemLabel::create(Label::create("Quit", "fonts/falcon.ttf", 60), this, menu_selector(MainMenu::menuCloseCallback));
+    dynamic_cast<Label*>(pCloseItem->getLabel())->enableOutline(Color4B::BLACK, 1);
     pMenuItems.pushBack(pCloseItem); //add to list
     
     cocos2d::Menu *pMenu = cocos2d::Menu::createWithArray(pMenuItems); //create menu
@@ -58,7 +61,7 @@ bool MainMenu::init()
     // create and initialize a label
     
     CCString *labelString = CCString::createWithFormat("漢ガエル");
-    auto label = LabelTTF::create(labelString->getCString(), "fonts/falcon.ttf", 40);
+    auto label = Label::create(labelString->getCString(), "fonts/falcon.ttf", 84);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -73,7 +76,7 @@ bool MainMenu::init()
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
     //scale sprite
-    sprite->setScale(visibleSize.width/sprite->getContentSize().width);
+    sprite->setScale(visibleSize.height/sprite->getContentSize().height);
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
@@ -83,13 +86,12 @@ bool MainMenu::init()
 
 //Game 1
 void MainMenu::menuGame1Callback(cocos2d::Ref *pSender){
-   transitionToKanjiBaseScene();
-    //tbd
+   toKanjiBaseScene();
 }
 
 //Game 2
 void MainMenu::menuGame2Callback(cocos2d::Ref *pSender){
-    //tbd
+   toGameScene();
 }
 
 //Close game
@@ -98,15 +100,24 @@ void MainMenu::menuCloseCallback(cocos2d::Ref *pSender){
     exit(0);
 }
 
+//game scene
 void MainMenu::toGameScene()
 {
-    //get the game scene and run it.
+   //get the game scene and run it.
+   auto scene = MatchingGame::createScene();
+   Director::getInstance()->pushScene(scene);
+}
+
+//kanji lists access
+void MainMenu::toKanjiBaseScene()
+{
+    //get the kanjibase scene and run it.
     auto scene = KanjiBase::createScene();
     Director::getInstance()->pushScene(scene);
     //what is diff between replaceScene and pushScene?
 }
 
-//transition to kanji base
+/*//transition to kanji base
 void MainMenu::transitionToKanjiBaseScene(){
-   toGameScene();
-}
+   toKanjiBaseScene();
+}*/
